@@ -5,24 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Musiccessories</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+</head>
 </head>
 
 <body>
   <div>
-    <div>
-      <h1>
+    <div class="text-xl font-semibold flex p-3">
+      <h1 class="w-1/2 text-left">
         <a href="index.html">
           <span>Hi! Welcome to</span>
           <span>Musiccessories!</span>
         </a>
       </h1>
   
-      <p>
+      <p class="w-1/2 text-right">
         <strong>No instruments.</strong> <em>Only accessories.</em>
       </p>
     </div>
-    <div>
-      <div>
+    <div class="flex">
+      <div class="w-1/3 p-3">
         <div>
           <h2>Guitar Strings</h2>
           <div>
@@ -32,7 +34,7 @@
           <div>$5.49</div>
         </div>
       </div>
-      <div>
+      <div class="w-1/3 p-3">
         <div>
           <h2>Guitar Picks (12-pack)</h2>
           <div>
@@ -42,7 +44,7 @@
           <div>$2.99</div>
         </div>
       </div>
-      <div>
+      <div class="w-1/3 p-3">
         <div>
           <h2>Drum Sticks (Pair)</h2>
           <div>
@@ -53,8 +55,16 @@
         </div>
       </div>
     </div>
-    <h1>Ready to Order?</h1>
-    <!-- Order form goes here -->
+    <h1 class="text-center font-semi-bold p-4 text-xl">Ready to Order?</h1>
+      <form action="submission.html" class="mt-8 w-64 text-left p-3">
+        <label for="name" class="font-bold block">Your name</label>
+        <input type="text" name="name" class="border border-gray-400 rounded my-2 p-2">
+        <label for="email" class="font-bold block">Your email</label>
+        <input type="text" name="email" class="border border-gray-400 rounded my-2 p-2">
+        <label for="order" class="font-bold block">What would you like to order?</label>
+        <input type="text" name="order" class="border border-gray-400 rounded my-2 p-2">
+        <button class="block mt-4 bg-purple-500 text-white rounded p-2 w-full text-left">Submit form!</button>
+      </form>
   </div>
 </body>
 

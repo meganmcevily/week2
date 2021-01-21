@@ -56,18 +56,21 @@
       </div>
     </div>
     <h1 class="text-center font-semi-bold p-4 text-xl">Ready to Order?</h1>
-      <form action="submission.html" class="mt-8 w-64 text-left p-3"></form> 
-        <label for="name" class="font-bold block">Your name</label>
-        <input type="text" name="name" class="border border-gray-400 rounded my-2 p-2">
+    <form netlify>
+      <label class="block ml-4 font-bold" for="name">Your Name</label>
+      <input class="p-2 w-64 m-4 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+      focus:border-purple-500" type="text" id="name" name="name">
+    
+      <label class="block ml-4 font-bold" for="email">Your Email</label>
+      <input class="p-2 w-64 m-4 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+      focus:border-purple-500" type="text" id="email" name="email">
 
-        <label for="email" class="font-bold block">Your email</label>
-        <input type="text" name="email" class="border border-gray-400 rounded my-2 p-2">
-
-        <label for="order" class="font-bold block">What would you like to order?</label>
-        <textarea type="text" name="order" rows="6" class="border border-gray-400 rounded p-2 w-full"></textarea>
-
-        <button class="block mt-4 bg-purple-500 text-white rounded px-4 py-2 text-left">Submit form!</button>
-      </form>
+      <label class="block ml-4 font-bold" for="order">What would you like to order?</label>
+      <textarea class="p-2 w-full m-4 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500
+      focus:border-purple-500" type="text" id="order" name="order" rows="6"></textarea>
+    
+      <button class="block ml-4 text-white bg-purple-500 rounded px-4 py-2">Submit form!</button>
+    </form>
   </div>
 </body>
 
